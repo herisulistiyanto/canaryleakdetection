@@ -1,0 +1,30 @@
+ext {
+
+    supportLibraryVersion = '25.0.1'
+    espressoCoreVersion = '2.2.2'
+    leakCanaryVersion = '1.5'
+    butterknifeVersion = '8.4.0'
+
+    supportDependencies = [
+            appCompat       : "com.android.support:appcompat-v7:${supportLibraryVersion}",
+            support         : "com.android.support:support-v4:${supportLibraryVersion}",
+            design          : "com.android.support:design:${supportLibraryVersion}",
+    ]
+
+    libraries = [
+            butterknife         : "com.jakewharton:butterknife:${butterknifeVersion}",
+            butterknifeCompiler : "com.jakewharton:butterknife-compiler:${butterknifeVersion}"
+    ]
+
+    testLibraries = [
+            junit               : "junit:junit:4.12",
+            espressoCore        : "com.android.support.test.espresso:espresso-core:${espressoCoreVersion}",
+            leakCanaryNoOp      : "com.squareup.leakcanary:leakcanary-android-no-op:${leakCanaryVersion}",
+    ]
+
+    helperLibraries = [
+            leakCanary          : "com.squareup.leakcanary:leakcanary-android:${leakCanaryVersion}",
+            leakCanaryNoOp      : "com.squareup.leakcanary:leakcanary-android-no-op:${leakCanaryVersion}",
+    ]
+
+}

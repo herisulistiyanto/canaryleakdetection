@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CanaryLeakDetection</string>
+    <string name="button_label">Do Async</string>
+    <string name="loading">Please Wait</string>
+</resources>
